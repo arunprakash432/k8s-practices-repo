@@ -1,0 +1,13 @@
+# service-nginx.yaml
+apiVersion: v1
+kind: Service
+metadata:
+  name: nginx-service
+  namespace: practice
+spec:
+  selector:
+    name: nginx
+  ports:
+  - port: 80
+    targetPort: 80
+    type: ClusterIP

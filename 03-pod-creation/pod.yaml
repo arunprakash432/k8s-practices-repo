@@ -1,0 +1,10 @@
+# pod-nginx.yaml
+apiVersion: v1
+kind: Pod
+metadata:
+  name: nginx
+  namespace: practice
+spec:
+  containers:
+  - name: nginx
+    image: nginx:latest
